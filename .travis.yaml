@@ -1,9 +1,12 @@
+sudo: enabled
+dist: trusty
+
 language: python
-#python:
-#  - "3.5.1"
+python:
+  - "3.5"
 
 install:
-#  - pip install -r requirements.txt
+  - pip install -r requirements.txt
 
 script:
 #  - python manage.py test
