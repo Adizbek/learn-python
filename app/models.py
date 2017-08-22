@@ -9,6 +9,7 @@ class Reporter(models.Model):
     def __str__(self):
         return self.full_name
 
+
 class Article(models.Model):
     pub_date = models.DateField()
     headline = models.CharField(max_length=200)

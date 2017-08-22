@@ -5,3 +5,14 @@ pipelines:
         script:
           - pip install -r requirements.txt
           - python manage.py test
+        services:
+          - postgres
+
+definitions:
+  services:
+    postgres:
+      image: postgres
+      environment:
+        POSTGRES_DB: 'django'
+        POSTGRES_USER: 'adizbek'
+        POSTGRES_PASSWORD: '1'
